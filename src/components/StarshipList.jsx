@@ -3,13 +3,13 @@ import StarshipCard from "./StarshipCard";
 
 const StarshipList = (props) => {
   return (
-    <div>
+    <section>
       {props.starships.map((starship, index) => (
         <div key={index}>
           <StarshipCard starship={starship} />
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
